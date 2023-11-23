@@ -1,1 +1,9 @@
 version: 2
+
+sources:
+
+- name: gsheet_raw
+  schema: gsheet_raw
+  tables:
+    - name: salesforce_performance
+      identifier: salesforce_performance

@@ -7,3 +7,7 @@ sources:
   tables:
     - name: salesforce_performance
       identifier: salesforce_performance
+    - name: salesforce_lead_generation
+      identifier: salesforce_lead_generation
+    - name: salesforce_scheduled_visits
+      identifier: salesforce_scheduled_visits

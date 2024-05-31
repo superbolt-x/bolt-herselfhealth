@@ -21,3 +21,5 @@ sources:
       identifier: herselfhealth_googleads_campaign_performance
     - name: salesforce_performance
       identifier: herselfhealth_salesforce_performance
+    - name: bingads_campaign_performance
+      identifier: herselfhealth_bingads_campaign_performance

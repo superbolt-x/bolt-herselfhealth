@@ -25,3 +25,5 @@ sources:
       identifier: herselfhealth_salesforce_performance
     - name: bingads_campaign_performance
       identifier: herselfhealth_bingads_campaign_performance
+    - name: yelp_performance
+      identifier: herselfhealth_yelp_performance

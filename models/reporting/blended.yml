@@ -11,6 +11,8 @@ sources:
       identifier: salesforce_lead_generation
     - name: salesforce_scheduled_visits
       identifier: salesforce_scheduled_visits
+    - name: yelp_daily_spend
+      identifier: yelp_daily_spend
 
 - name: reporting
   schema: reporting

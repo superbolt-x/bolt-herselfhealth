@@ -7,7 +7,7 @@ WITH data as
     FROM {{ source('gsheet_raw','salesforce_lead_generation') }}
     GROUP BY 1,2,3
     UNION ALL
-    SELECT create_date::date as date, preferred_clinic, person_account_lead_source as lead_source, 0 as leads, COUNT(*) as appointments
+    SELECT created_date::date as date, preferred_clinic, person_account_lead_source as lead_source, 0 as leads, COUNT(*) as appointments
     FROM {{ source('gsheet_raw','salesforce_scheduled_visits') }}
     GROUP BY 1,2,3)
     

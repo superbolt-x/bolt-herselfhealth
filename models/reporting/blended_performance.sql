@@ -14,12 +14,6 @@ WITH data as
       0 as sf_leads, 0 as sf_appointments
     FROM {{ source('reporting','googleads_campaign_performance') }}
     GROUP BY 1,2,3
-    /*UNION ALL
-    SELECT 'Nextdoor' as channel, date::date, date_granularity, 
-      COALESCE(SUM(spend),0) as spend, COALESCE(SUM(clicks),0) as clicks, 
-      0 as sf_leads, 0 as sf_appointments
-    FROM {{ source('reporting','nextdoor_performance') }}
-    GROUP BY 1,2,3*/
     UNION ALL
     SELECT 'Bing' as channel, date::date, date_granularity, 
       COALESCE(SUM(spend),0) as spend, COALESCE(SUM(clicks),0) as clicks, 

@@ -60,7 +60,7 @@ WITH data as
       COALESCE(SUM(leads),0) as sf_leads, COALESCE(SUM(appointments),0) as sf_appointments
     FROM {{ source('reporting','salesforce_performance') }}
     WHERE lead_source ~* 'Website'
-    GROUP BY 1,2,3
+    GROUP BY 1,2,3)
     
     
 SELECT channel,
